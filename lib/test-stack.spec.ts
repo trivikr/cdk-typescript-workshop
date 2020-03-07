@@ -4,7 +4,7 @@ import {
   MatchStyle
 } from "@aws-cdk/assert";
 import * as cdk from "@aws-cdk/core";
-import Test = require("../lib/test-stack");
+import Test = require("./test-stack");
 
 test("Empty Stack", () => {
   const app = new cdk.App();
