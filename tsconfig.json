@@ -16,5 +16,5 @@
     "rootDir": "src",
     "outDir": "dist"
   },
-  "exclude": ["lib", "bin", "cdk.out"]
+  "exclude": ["cdk", "bin", "cdk.out"]
 }
