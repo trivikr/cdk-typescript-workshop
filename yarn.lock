@@ -20,7 +20,7 @@
     "@aws-cdk/cx-api" "1.28.0"
     minimatch "^3.0.4"
 
-"@aws-cdk/aws-apigateway@1.28.0", "@aws-cdk/aws-apigateway@^1.27.0":
+"@aws-cdk/aws-apigateway@1.28.0":
   version "1.28.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-apigateway/-/aws-apigateway-1.28.0.tgz#8f19d5cc4f76795da5f6168aec9162a2c99e8a58"
   integrity sha512-Fv20P2H8W0bD2SayX0Z57X5NITEGmtPQt9aLEbDl2cP1p8edtx1DmJnnIaRJNjsGs+ebo6YptUSH+H7r6HdQWg==
@@ -131,7 +131,7 @@
     "@aws-cdk/aws-iam" "1.28.0"
     "@aws-cdk/core" "1.28.0"
 
-"@aws-cdk/aws-dynamodb@^1.27.0":
+"@aws-cdk/aws-dynamodb@1.28.0":
   version "1.28.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-dynamodb/-/aws-dynamodb-1.28.0.tgz#6a2854acfbfd1315e9a84db180167311912e8e77"
   integrity sha512-rti0eC/xHYd+HQ1T+aPZEVh5PphVmEwgobmJ0SeOGZ83XSfbKDXAEhZv3GaxFFZW0zafzY8qtAerbKHVwlHHaQ==
@@ -265,7 +265,7 @@
     "@aws-cdk/aws-iam" "1.28.0"
     "@aws-cdk/core" "1.28.0"
 
-"@aws-cdk/aws-lambda@1.28.0", "@aws-cdk/aws-lambda@^1.27.0":
+"@aws-cdk/aws-lambda@1.28.0":
   version "1.28.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-lambda/-/aws-lambda-1.28.0.tgz#6322e65725112dc332e315d63d20356f7b4f9396"
   integrity sha512-6oZQo/GOZez52sUY2nCv3j2VD8VIPVH/WVn7d/u7Zuh5hh+v1QOLnR0JNKrlokGACS6ypWBZeMbOwe4LF+o/xw==
