@@ -12,7 +12,7 @@
     "@types/aws-lambda": "^8.10.46",
     "@types/jest": "^24.0.22",
     "@types/node": "12.12.29",
-    "aws-cdk": "1.27.0",
+    "aws-cdk": "1.28.0",
     "husky": ">=4",
     "jest": "^24.9.0",
     "lint-staged": ">=10",
