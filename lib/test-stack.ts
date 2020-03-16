@@ -9,7 +9,7 @@ export class TestStack extends cdk.Stack {
 
     const hello = new lambda.Function(this, "HelloHandler", {
       runtime: lambda.Runtime.NODEJS_12_X,
-      code: lambda.Code.fromAsset("lambda"),
+      code: lambda.Code.fromAsset("dist/lambda"),
       handler: "hello.handler"
     });
 

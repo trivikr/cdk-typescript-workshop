@@ -1,6 +1,7 @@
-const { DynamoDB, Lambda } = require("aws-sdk");
+import { APIGatewayEvent } from "aws-lambda";
+import { DynamoDB, Lambda } from "aws-sdk";
 
-exports.handler = async function(event) {
+exports.handler = async function(event: APIGatewayEvent) {
   console.log("request:", JSON.stringify(event, undefined, 2));
 
   // create AWS SDK clients
@@ -8,6 +9,7 @@ exports.handler = async function(event) {
   const lambda = new Lambda();
 
   // update dynamo entry for "path" with hits++
+  // @ts-ignore: Type 'string | undefined' is not assignable to type 'string'
   await dynamo
     .updateItem({
       TableName: process.env.HITS_TABLE_NAME,
@@ -18,6 +20,7 @@ exports.handler = async function(event) {
     .promise();
 
   // call downstream function and capture response
+  // @ts-ignore: Type 'string | undefined' is not assignable to type 'string'
   const resp = await lambda
     .invoke({
       FunctionName: process.env.DOWNSTREAM_FUNCTION_NAME,

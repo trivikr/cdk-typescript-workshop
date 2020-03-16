@@ -12,7 +12,9 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "strictPropertyInitialization": true
+    "strictPropertyInitialization": true,
+    "rootDir": "src",
+    "outDir": "dist"
   },
-  "exclude": ["cdk.out"]
+  "exclude": ["lib", "bin", "cdk.out"]
 }
