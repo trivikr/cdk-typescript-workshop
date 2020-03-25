@@ -1,7 +1,7 @@
 import { APIGatewayEvent } from "aws-lambda";
 import { DynamoDB, Lambda } from "aws-sdk";
 
-exports.handler = async function(event: APIGatewayEvent) {
+const handler = async (event: APIGatewayEvent) => {
   console.log("request:", JSON.stringify(event, undefined, 2));
 
   // create AWS SDK clients
@@ -33,3 +33,5 @@ exports.handler = async function(event: APIGatewayEvent) {
   // return response back to upstream caller
   return JSON.parse(resp.Payload);
 };
+
+export { handler };
