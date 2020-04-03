@@ -15,7 +15,7 @@ const handler = async (event: APIGatewayEvent) => {
       TableName: process.env.HITS_TABLE_NAME,
       Key: { path: { S: event.path } },
       UpdateExpression: "ADD hits :incr",
-      ExpressionAttributeValues: { ":incr": { N: "1" } }
+      ExpressionAttributeValues: { ":incr": { N: "1" } },
     })
     .promise();
 
@@ -24,7 +24,7 @@ const handler = async (event: APIGatewayEvent) => {
   const resp = await lambda
     .invoke({
       FunctionName: process.env.DOWNSTREAM_FUNCTION_NAME,
-      Payload: JSON.stringify(event)
+      Payload: JSON.stringify(event),
     })
     .promise();
 
