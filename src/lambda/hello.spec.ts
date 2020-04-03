@@ -16,9 +16,7 @@ describe("hello lambda:", () => {
   });
 
   it("returns event.path in the body", async () => {
-    mockEvent.path = `/${Math.random()
-      .toString(36)
-      .substring(2)}`;
+    mockEvent.path = `/${Math.random().toString(36).substring(2)}`;
     const response = await handler(mockEvent);
     expect(response.body).toBe(`Hello, CDK! You've hit ${mockEvent.path}\n`);
   });
